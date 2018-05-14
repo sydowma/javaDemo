@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class ListDemo {
@@ -55,6 +56,11 @@ public class ListDemo {
         System.out.println(q.getClass().toString() + q);
     }
 
+    private static void copyOnWriteArrayList() {
+        List<String> c = new CopyOnWriteArrayList<String>();
+        
+    }
+
     
 
     
@@ -64,5 +70,6 @@ public class ListDemo {
         array();
         linkedList();
         queue();
+        copyOnWriteArrayList();
     }
 }
