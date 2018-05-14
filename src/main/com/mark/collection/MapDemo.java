@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * static 中可以调用实例方法
@@ -56,6 +57,13 @@ public class MapDemo {
         System.out.println(m.getClass().toString() + m);
 
     }
+
+    private static void concurrentHashMap() {
+        Map<String, String> m = new ConcurrentHashMap<String, String>();
+        m.put("key", "value");
+        System.out.println(m.getClass().toString() + m);
+    }
+    
     public static void main(String[] args) {
         HashMap();
         TreeMap();

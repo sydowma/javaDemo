@@ -4,6 +4,9 @@ package collection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ListDemo {
     private static final Integer MAX = 10;
@@ -29,8 +32,6 @@ public class ListDemo {
         for (int i : l) {
             System.out.println(i);
         }
-
-        
     }
 
     private static void linkedList() {
@@ -45,11 +46,23 @@ public class ListDemo {
         System.out.println("LinkedList to new ArrayList" + ll.getClass().toString() + ll);
     }
 
+    private static void queue() {
+        Queue<Integer> q = new LinkedBlockingQueue<Integer>();
+        for (Integer i = 0; i < MAX; i++) {
+            q.add(i);
+        }
+        
+        System.out.println(q.getClass().toString() + q);
+    }
+
+    
+
     
 
     public static void main(String[] args) {
         arrayList();
         array();
         linkedList();
+        queue();
     }
 }
