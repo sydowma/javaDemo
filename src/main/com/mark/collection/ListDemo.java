@@ -2,6 +2,7 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -21,6 +22,9 @@ public class ListDemo {
         Integer[] b = { 0, 1, 2, 3 };
         System.out.println(a.toString());
         System.out.println(b.toString());
+
+        List newA = Arrays.asList(b);
+        System.out.println(newA);
     }
 
     private static void arrayList() {
@@ -66,10 +70,10 @@ public class ListDemo {
     
 
     public static void main(String[] args) {
-        arrayList();
+        // arrayList();
         array();
-        linkedList();
-        queue();
-        copyOnWriteArrayList();
+        // linkedList();
+        // queue();
+        // copyOnWriteArrayList();
     }
 }
