@@ -4,6 +4,10 @@
  * @author mark
  * 
  */
+package string;
+
+import java.awt.SystemTray;
+
 public class StringDemo {
 
     private static final String foo = "foo";
@@ -45,12 +49,43 @@ public class StringDemo {
 
     }
 
+    private static void testEquals3() {
+        String n = "";
+
+        long startTime1 = System.nanoTime();
+        if ("".equals(n)) {
+            System.out.println("equals " + 0);
+        }
+
+        long endTime1 = System.nanoTime();
+        long duration1 = (endTime1 - startTime1);
+        System.out.println("equals " + duration1);
+
+        long startTime2 = System.nanoTime();
+        if (n.isEmpty()) {
+            System.out.println("isEmpty " + 0);
+        }
+        long endTime2 = System.nanoTime();
+        long duration2 = endTime2 - startTime2;
+        System.out.println("isEmpty " + duration2);
+
+        long startTime = System.nanoTime();
+
+        if (n.length() == 0) {
+            System.out.println("length " + 0);
+        }
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
+        System.out.println("length " + duration);
+    }
+
     public static void main(String[] args) {
-        StringDemo s = new StringDemo();
-        boolean s1 = s.testEquals();
-        boolean s2 = s.testEquals2();
-        s.testBuilder();
+        // StringDemo s = new StringDemo();
+        // boolean s1 = s.testEquals();
+        // boolean s2 = s.testEquals2();
+        // s.testBuilder();
         // System.out.println(s1);
         // System.out.println(s2);
+        testEquals3();
     }
 }
