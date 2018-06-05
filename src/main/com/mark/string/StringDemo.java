@@ -86,6 +86,6 @@ public class StringDemo {
         // s.testBuilder();
         // System.out.println(s1);
         // System.out.println(s2);
-        testEquals3();
+        // testEquals3();
     }
 }

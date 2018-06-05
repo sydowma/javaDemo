@@ -65,15 +65,30 @@ public class ListDemo {
         
     }
 
+    private static void subList() {
+        List<String> s = new ArrayList<String>();
+        s.add("a");
+        s.add("b");
+        s.add("c");
+
+        List<String> newS = s.subList(2, 3);
+        
+        System.out.println(s);
+        System.out.println(newS);
+        newS.add("d");
+        System.out.println(s);
+    }
+
     
 
     
 
     public static void main(String[] args) {
         // arrayList();
-        array();
+        // array();
         // linkedList();
         // queue();
         // copyOnWriteArrayList();
+        subList();
     }
 }
