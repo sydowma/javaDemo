@@ -7,6 +7,9 @@ public class MallardDuck extends Duck {
      * 使用FlyWithWings作为其FlyBehavior类型
      */
     public MallardDuck() {
+        /**
+         * 这里相当于组合了不同的行为，指定类来实现
+         */
         quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();
     }
