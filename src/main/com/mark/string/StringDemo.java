@@ -4,7 +4,7 @@
  * @author mark
  * 
  */
-package string;
+package main.com.mark.string;
 
 import java.awt.SystemTray;
 
@@ -79,7 +79,15 @@ public class StringDemo {
         System.out.println("length " + duration);
     }
 
+    public static String foo() {
+        return "foo";
+    }
+
     public static void main(String[] args) {
+
+        
+        System.out.println(foo().equals(213123));
+        System.out.println(foo() == new String("foo"));
         // StringDemo s = new StringDemo();
         // boolean s1 = s.testEquals();
         // boolean s2 = s.testEquals2();
