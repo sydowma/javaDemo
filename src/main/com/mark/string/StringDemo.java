@@ -4,7 +4,7 @@
  * @author mark
  * 
  */
-package string;
+package main.com.mark.string;
 
 import java.awt.SystemTray;
 
@@ -79,12 +79,21 @@ public class StringDemo {
         System.out.println("length " + duration);
     }
 
+<<<<<<< HEAD
     private static void generate(String str) {
         System.out.println("string is ".format("%s", str));
 
+=======
+    public static String foo() {
+        return "foo";
+>>>>>>> 64a1b6e3a264659c06fc3cb85343e8d54aea27ac
     }
 
     public static void main(String[] args) {
+
+        
+        System.out.println(foo().equals(213123));
+        System.out.println(foo() == new String("foo"));
         // StringDemo s = new StringDemo();
         // boolean s1 = s.testEquals();
         // boolean s2 = s.testEquals2();
