@@ -79,6 +79,11 @@ public class StringDemo {
         System.out.println("length " + duration);
     }
 
+    private static void generate(String str) {
+        System.out.println("string is ".format("%s", str));
+
+    }
+
     public static void main(String[] args) {
         // StringDemo s = new StringDemo();
         // boolean s1 = s.testEquals();
