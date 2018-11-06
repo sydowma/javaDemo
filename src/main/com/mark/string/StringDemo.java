@@ -79,14 +79,11 @@ public class StringDemo {
         System.out.println("length " + duration);
     }
 
-<<<<<<< HEAD
     private static void generate(String str) {
         System.out.println("string is ".format("%s", str));
 
-=======
     public static String foo() {
         return "foo";
->>>>>>> 64a1b6e3a264659c06fc3cb85343e8d54aea27ac
     }
 
     public static void main(String[] args) {
