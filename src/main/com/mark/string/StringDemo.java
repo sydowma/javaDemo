@@ -81,6 +81,7 @@ public class StringDemo {
 
     private static void generate(String str) {
         System.out.println("string is ".format("%s", str));
+    }
 
     public static String foo() {
         return "foo";
@@ -89,7 +90,7 @@ public class StringDemo {
     public static void main(String[] args) {
 
         
-        System.out.println(foo().equals(213123));
+        System.out.println(foo().equals("213123"));
         System.out.println(foo() == new String("foo"));
         // StringDemo s = new StringDemo();
         // boolean s1 = s.testEquals();
