@@ -37,8 +37,9 @@ public class CallableDemo {
             } finally {
                 exec.shutdown();
             }
-
         }
+
+        System.out.println("task finish");
 
     }
 }
