@@ -56,7 +56,7 @@ public class LinkedBlockingQueueExample<T> {
 
                     System.out.println(Thread.currentThread());
                     System.out.println("Thread sleep 2000");
-                    Thread.sleep(2000);
+                    // Thread.sleep(2000);
                 
                 }
             } catch (Exception e) {
