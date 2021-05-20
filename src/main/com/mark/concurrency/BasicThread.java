@@ -1,5 +1,5 @@
 
-package main.com.mark.concurrency;
+package concurrency;
 
 public class BasicThread {
     public static void main(String[] args) {

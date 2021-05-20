@@ -15,7 +15,7 @@ public class CloneTest {
             System.out.println("original1=" + original);
             System.out.println("copy=" + copy);
         } catch (Exception e) {
-            //TODO: handle exception
+            // TODO: handle exception
             e.printStackTrace();
         }
     }

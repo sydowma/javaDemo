@@ -1,9 +1,5 @@
 package main.com.mark.collection;
-import java.util.AbstractMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.Map;
+import java.util.*;
 
 public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     static final int SIZE = 997;
@@ -11,7 +7,7 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     @SuppressWarnings("unchecked")
     LinkedList<MapEntry<K, V>>[] buckets = new LinkedList[SIZE];
 
-    @Overrid
+    @Override
     public V put(K key, V value) {
         V oldValue = null;
         int index = Math.abs(key.hashCode()) % SIZE;
@@ -45,13 +41,13 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
         }
     }
 
-    public Set<Map.Entry<K, V>> entrySet() {
+    public Set<Entry<K, V>> entrySet() {
         Set<Map.Entry<K, V>> set = new HashSet<Map.Entry<K, V>>();
-        for(LinkedList<MapEntry<K, V>> bucket : buckets) {
+        for(LinkedList<Map.Entry<K, V>> bucket : buckets) {
             if (bucket == null) {
                 continue;
             }
-            for (MapEntry<K, V> mpair : bucket) {
+            for (Map.Entry<K, V> mpair : bucket) {
                 set.add(mpair);
             }
         }
