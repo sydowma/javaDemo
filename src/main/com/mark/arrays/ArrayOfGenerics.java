@@ -1,4 +1,4 @@
-package main.com.mark.arrays;
+package arrays;
 
 import java.util.*;
 import java.util.ArrayList;

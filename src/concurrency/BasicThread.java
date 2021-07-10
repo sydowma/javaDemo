@@ -1,5 +1,7 @@
 
-package main.com.mark.concurrency;
+package concurrency;
+
+import main.com.mark.concurrency.LiftOff;
 
 public class BasicThread {
     public static void main(String[] args) {

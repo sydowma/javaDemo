@@ -16,13 +16,6 @@ class ExceptionThread2 implements Runnable {
     }
 }
 
-class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
-    @Override
-    public void uncaughtException(Thread t, Throwable e) {
-        System.out.println("caught " + e);
-    }
-}
-
 class HandlerThreadFactory implements ThreadFactory {
     @Override
     public Thread newThread(Runnable r) {

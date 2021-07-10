@@ -23,13 +23,14 @@ public class BinaryTree {
             return new Node(value);
         }
 
-        if ( value < current.value ) {
+        if ( value < current.getValue() ) {
             current.setLeft( addRecursive(current.getLeft(), value) );
         } else if ( value > current.getKey() ) {
             current.setRight( addRecursive(current.getRight() , value));
         } else {
             return current;
         }
+        return null;
     }
 
     private void add2 (int value) {
@@ -72,7 +73,7 @@ public class BinaryTree {
     }
 
     private static BinaryTree test2() {
-        BinaryTree bt = new BinaryTree();
+        BinaryTree bt = new BinaryTree(0);
 
         bt.add2(6);
         bt.add2(4);
@@ -95,11 +96,20 @@ class Node {
     private int key;
     private Node left;
     private Node right;
+    private int value;
 
     Node (int key) {
         this.key = key;
         right = null;
         left = null;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public void setKey(int key) {

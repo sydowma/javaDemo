@@ -1,6 +1,7 @@
-import javax.print.attribute.standard.Destination;
+package main.com.mark.innerclasses;
 
-public class Parace10 {
+
+public class Parcel10 {
     public Destination destination (final String dest, final float price) {
         return new Destination() {
             private int cost;
@@ -18,7 +19,7 @@ public class Parace10 {
 
     }
     public static void main(String... args) {
-        Parace10 p = new Parace10();
+        Parcel10 p = new Parcel10();
         Destination d = p.destination("Tasmania", 101.395F);
     }
 }

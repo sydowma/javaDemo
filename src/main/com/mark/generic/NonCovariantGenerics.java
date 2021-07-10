@@ -10,7 +10,7 @@ class Apple extends Fruit {
 
 }
 public class NonCovariantGenerics {
-    List<Fruit> fruit = new ArrayList<Apple>();
+    List<Apple> fruit = new ArrayList<Apple>();
     // compile error 
     public static void main(String[] args) {
         NonCovariantGenerics n = new NonCovariantGenerics();
