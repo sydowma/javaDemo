@@ -23,9 +23,6 @@ hs_err_pid*
 
 .vscode/
 
-.idea/
-
-*.iml
-
-
 **/.DS_Store
+*.iml
+.idea/
