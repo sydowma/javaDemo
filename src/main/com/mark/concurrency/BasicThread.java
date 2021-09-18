@@ -1,5 +1,5 @@
 
-package concurrency;
+package main.com.mark.concurrency;
 
 import main.com.mark.concurrency.LiftOff;
 
