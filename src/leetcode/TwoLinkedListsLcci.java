@@ -37,7 +37,7 @@ public class TwoLinkedListsLcci {
         ListNode h1 = headA;
         ListNode h2 = headB;
 
-        while (!h1.equals(h2)) {
+        while (h1 == null || h2 == null || !h1.equals(h2)) {
             if (h1 == null) {
                 h1 = headB;
             } else {
@@ -63,14 +63,14 @@ public class TwoLinkedListsLcci {
 
         ListNode listB = new ListNode(5);
         listB.next = new ListNode(0);
-        listB.next.next = new ListNode(8);
-        listB.next.next.next = new ListNode(4);
-        listB.next.next.next.next = new ListNode(5);
+//        listB.next.next = new ListNode(8);
+//        listB.next.next.next = new ListNode(4);
+//        listB.next.next.next.next = new ListNode(5);
 
-//        listB.next.next = new ListNode(1);
-//        listB.next.next.next = new ListNode(8);
-//        listB.next.next.next.next = new ListNode(4);
-//        listB.next.next.next.next.next = new ListNode(5);
+        listB.next.next = new ListNode(1);
+        listB.next.next.next = new ListNode(8);
+        listB.next.next.next.next = new ListNode(4);
+        listB.next.next.next.next.next = new ListNode(5);
 
         ListNode result = getIntersectionNode(listA, listB);
         while (result != null) {
