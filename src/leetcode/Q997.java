@@ -5,7 +5,7 @@ package leetcode;
  * @author magaofei
  * @date 2021/9/5
  */
-public class P997 {
+public class Q997 {
 
     public static int[] sortedSquares(int[] nums) {
         // 双指针
