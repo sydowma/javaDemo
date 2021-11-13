@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * https://labuladong.gitee.io/algo/1/4/
  * 回溯算法
+ * 回溯算法本质就是遍历一棵多叉树
  */
 public class Backdate {
 
