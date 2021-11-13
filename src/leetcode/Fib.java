@@ -17,9 +17,11 @@ public class Fib {
             curr = sum;
         }
         return curr;
+
     }
 
     public static void main(String[] args) {
-        System.out.println(fib(5));
+        int f = fib(10);
+        System.out.println(f);
     }
 }
